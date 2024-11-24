@@ -53,7 +53,7 @@ public partial class KeycloakClient
 	public void SetSerializer(ISerializer serializer) =>
 		_serializer = serializer ?? throw new ArgumentNullException(nameof(serializer));
 
-	private IFlurlRequest GetBaseUrl(string authenticationRealm) =>
+	internal IFlurlRequest GetBaseUrl(string authenticationRealm) =>
 		new Url(_url).AppendPathSegment(_options.Prefix)
 					 .WithSettings(settings => settings.JsonSerializer = _serializer)
 					 .WithAuthentication(_getToken,
