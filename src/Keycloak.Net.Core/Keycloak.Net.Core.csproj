@@ -1,38 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Authors>Luk Vermeulen, Peter Andersson, Galip Tolga Erdem, Silent Partner Software, Consist </Authors>
-    <Copyright>Copyright 2023 by Luk Vermeulen, Peter Andersson, Silent Partner Software. All rights reserved.</Copyright>
-	<PackageProjectUrl>https://github.com/ronenr-consist/Keycloak.Net</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/ronenr-consist/Keycloak.Net</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>keycloak</PackageTags>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageIcon>icon.png</PackageIcon>
-    <Description>C# client for Keycloak</Description>
-    <SignAssembly>true</SignAssembly>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <IncludeSymbols>true</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <Version>1.0.3</Version>
-    <Nullable>enable</Nullable>
-    <PackageId>Keycloak.Net.Core.net6.fork</PackageId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Luk Vermeulen, Peter Andersson, Galip Tolga Erdem, Silent Partner Software, Consist</Authors>
+		<Copyright>Copyright 2023 by Luk Vermeulen, Peter Andersson, Silent Partner Software. All rights reserved.</Copyright>
+		<PackageProjectUrl>https://github.com/ronenr-consist/Keycloak.Net</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ronenr-consist/Keycloak.Net</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>keycloak</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+		<Description>C# client for Keycloak</Description>
+		<SignAssembly>true</SignAssembly>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<Version>1.0.5</Version>
+		<Nullable>enable</Nullable>
+		<PackageId>Keycloak.Net.Core.net6.fork</PackageId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Flurl.Http" Version="4.0.2" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Flurl.Http" Version="4.0.2" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\docs\icon.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\docs\icon.png">
+			<Pack>true</Pack>
+			<PackagePath>icon.png</PackagePath>
+		</None>
+		<None Include="..\..\README.md" Pack="true" PackagePath="README.md" />
+	</ItemGroup>
 
 </Project>
