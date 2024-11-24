@@ -2,11 +2,11 @@
 # Keycloak.Net.Core
 [![license](https://img.shields.io/github/license/AnderssonPeter/Keycloak.Net.svg?maxAge=2592000)](https://github.com/AnderssonPeter/Keycloak.Net/blob/master/LICENSE) [![NuGet](https://img.shields.io/nuget/v/Keycloak.Net.Core?maxAge=2592000)](https://www.nuget.org/packages/Keycloak.Net.Core/) [![downloads](https://img.shields.io/nuget/dt/Keycloak.Net.Core)](https://www.nuget.org/packages/Keycloak.Net.Core/)
 
- A Fork of https://github.com/lvermeulen/Keycloak.Net with some additional patches
+ A Fork of https://github.com/silentpartnersoftware/Keycloak.Net with some additional patches
  * allow usage of CancellationTokens
  * changed ClientConfig to Dictionary<string, string>
  * removed signing
- * .NET 8 support only
+ * .NET 6 support only
  * updated for keycloak version 25+
  * added support for changing default `AdminClientId` which has default `admin-cli` value
  * added support for System.Text.Json in replacement of NewtonsoftJson.
